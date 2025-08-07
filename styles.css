@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: radial-gradient(circle, #adb5bd, #bfc6cc, #d2d7db, #e5e8ea, #f8f9fa);
+  background-attachment: fixed;
+  font-family: 'Raleway', sans-serif;
+}

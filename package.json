@@ -1,0 +1,35 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Frank Zhang-Zheng Personal Website",
+  "homepage": "https://github.com/fzhangzheng/personal-website#readme",
+  "bugs": {
+    "url": "https://github.com/fzhangzheng/personal-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fzhangzheng/personal-website.git"
+  },
+  "license": "ISC",
+  "author": "Frank Zhang-Zheng",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc && tsc --project tsconfig.navigation.json",
+    "build:server": "tsc",
+    "build:client": "tsc --project tsconfig.navigation.json",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
