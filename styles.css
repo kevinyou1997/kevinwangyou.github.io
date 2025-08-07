@@ -9,9 +9,11 @@ body {
 
 /* Responsive profile image */
 .profile-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+  width: 200px !important;
+  height: 200px !important;
+  max-width: 300px !important;
+  max-height: 300px !important;
+  object-fit: cover !important;
 }
 
 /* Responsive content wrapper */
@@ -24,8 +26,8 @@ body {
 /* Mobile styles */
 @media (max-width: 768px) {
   .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 150px !important;
+    height: 150px !important;
   }
   
   .content-wrapper {
@@ -61,16 +63,16 @@ body {
 /* Tablet styles */
 @media (min-width: 769px) and (max-width: 1024px) {
   .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 250px !important;
+    height: 250px !important;
   }
 }
 
 /* Large screens */
 @media (min-width: 1025px) {
   .profile-img {
-    width: 300px;
-    height: 300px;
+    width: 300px !important;
+    height: 300px !important;
   }
 }
 
