@@ -120,7 +120,36 @@ http://localhost:3000
 - `npm run build` - Build both server and client TypeScript
 - `npm run build:server` - Build server TypeScript only  
 - `npm run build:client` - Build client TypeScript only
+- `npm run build:pages` - Build for GitHub Pages deployment
 - `npm run start` - Start production server (requires build first)
+
+## GitHub Pages Deployment
+
+This repository is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment
+
+1. Push your changes to the `main` branch
+2. GitHub Actions will automatically build and deploy your site
+3. Your site will be available at: `https://fzhangzheng.github.io/personal-website/`
+
+### Manual Setup (One-time)
+
+1. Go to your repository on GitHub
+2. Navigate to Settings → Pages
+3. Under "Source", select "GitHub Actions"
+4. The workflow will automatically deploy on every push to `main`
+
+### Local Testing Before Deployment
+
+```bash
+# Build the client-side JavaScript
+npm run build:client
+
+# Open index.html in your browser to test the static version
+```
+
+**Note**: The GitHub Pages version serves static files only (no Express server), but all functionality remains the same since the site is designed as a single-page application.
 
 ## Navigation
 

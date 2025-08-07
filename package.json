@@ -20,6 +20,7 @@
     "build": "tsc && tsc --project tsconfig.navigation.json",
     "build:server": "tsc",
     "build:client": "tsc --project tsconfig.navigation.json",
+    "build:pages": "npm run build:client",
     "start": "node dist/index.js"
   },
   "devDependencies": {
