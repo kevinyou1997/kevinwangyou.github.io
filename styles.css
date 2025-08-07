@@ -6,3 +6,90 @@ body {
   background-attachment: fixed;
   font-family: 'Raleway', sans-serif;
 }
+
+/* Responsive profile image */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive content wrapper */
+.content-wrapper {
+  padding: 2rem !important;
+  margin: 1rem;
+  max-width: 90vw;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .content-wrapper {
+    padding: 1.5rem !important;
+    margin: 0.5rem;
+  }
+  
+  /* Stack navbar items vertically on mobile */
+  .navbar-nav {
+    flex-direction: column;
+  }
+  
+  .navbar-nav .nav-link {
+    width: auto !important;
+    margin: 0.25rem 0;
+  }
+  
+  /* Hide pipe separators on mobile */
+  .navbar-nav span.text-muted {
+    display: none;
+  }
+  
+  /* Adjust font sizes on mobile */
+  .fs-3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .profile-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Bottom navigation */
+.bottom-nav {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive bottom nav */
+@media (max-width: 576px) {
+  .bottom-nav {
+    width: 95%;
+    left: 2.5%;
+    transform: none;
+    bottom: 5px;
+  }
+}
