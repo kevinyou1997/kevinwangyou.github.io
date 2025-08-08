@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "Frank Zhang-Zheng Personal Website",
+  "description": "Kevin Wang You Personal Website",
   "homepage": "https://github.com/fzhangzheng/personal-website#readme",
   "bugs": {
     "url": "https://github.com/fzhangzheng/personal-website/issues"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/fzhangzheng/personal-website.git"
   },
   "license": "ISC",
-  "author": "Frank Zhang-Zheng",
+  "author": "Kevin Wang You",
   "type": "module",
   "main": "index.js",
   "scripts": {
